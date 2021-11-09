@@ -1,0 +1,125 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.kutear.gm-library",
+    "module": "gm-core",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.reactivex.rxjava3",
+          "module": "rxandroid",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.reactivex.rxjava3",
+          "module": "rxjava",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gm-core-0.0.1.aar",
+          "url": "gm-core-0.0.1.aar",
+          "size": 100646,
+          "sha512": "a6b6c37c40018984eea6dc87b0b5e3b8eaaeec7bcd11d68438c497c99094afadccd00d38407f7fbfc29f3edc849bd3a70742c514c99c89ae59ffbfce4160b46c",
+          "sha256": "647e5e4bcbc8970c372f796f757b390803076b3c0ae6a1be8ebe87996dd5042b",
+          "sha1": "ed2343a75078315626b323b96f51856841041248",
+          "md5": "fccac0e3acf3da4e18f9a3d9919373d9"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.reactivex.rxjava3",
+          "module": "rxandroid",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.reactivex.rxjava3",
+          "module": "rxjava",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.31"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gm-core-0.0.1.aar",
+          "url": "gm-core-0.0.1.aar",
+          "size": 100646,
+          "sha512": "a6b6c37c40018984eea6dc87b0b5e3b8eaaeec7bcd11d68438c497c99094afadccd00d38407f7fbfc29f3edc849bd3a70742c514c99c89ae59ffbfce4160b46c",
+          "sha256": "647e5e4bcbc8970c372f796f757b390803076b3c0ae6a1be8ebe87996dd5042b",
+          "sha1": "ed2343a75078315626b323b96f51856841041248",
+          "md5": "fccac0e3acf3da4e18f9a3d9919373d9"
+        }
+      ]
+    }
+  ]
+}
